@@ -5,7 +5,11 @@ from .piece import Piece
 
 class Board:
     def __init__(self):
+
+        #2D list, for 8 rows and 8 columns, 8 interior lists and inside each list has 8 elements, telling you if they're red, white, king piece, empty
+        #e.g. self.board = [[WHITE, 0, WHITE, 0, WHITE], [RED, 0, RED, 0, WHITE]]
         self.board = []
+        
         #self.selected_piece = None #self.selected defined in game.py
         self.red_left = self.white_left = 12
         self.red_kings = self.white_kings = 0
